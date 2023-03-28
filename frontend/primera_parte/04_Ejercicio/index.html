@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p tooltip="Hola">Bienvenido</p>
+    <script>
+        const el = document.querySelector("[tooltip]")
+        const value = el.getAttribute("tooltip")
+        var span = document.createElement("span");
+        var text = document.createTextNode(value)
+        span.appendChild(text);
+        span.classList.add("tooltip")
+        el.appendChild(span);
+        
+    </script>
+</body>
+</html>

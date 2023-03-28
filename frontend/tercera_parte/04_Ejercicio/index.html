@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[lang~="en-au"] {
+            color:red;
+        }
+
+        div[lang|="pt"] {
+            color: green;
+        }
+
+        div[lang^="zh"] {
+            color: blueviolet;
+        }
+
+        div[lang$="TW"] {
+            color: orange;
+        }
+
+        div[data-lang="zh-TW"] {
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div lang="en-us en-gb en-au en-nz">1</div>
+    <div lang="pt">2</div>
+    <div lang="zh-CN">3</div>
+    <div lang="zh-TW">4</div>
+    <div data-lang="zh-TW">5</div>
+</body>
+</html>

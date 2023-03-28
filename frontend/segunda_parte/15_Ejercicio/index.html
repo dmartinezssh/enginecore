@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body.dark {
+            background-color: #000;
+            color: #FFF;
+            transition: 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" name="mode" id="modeDark">
+        <label for="modeLight">Modo Oscuro</label>
+    </div>
+    <div>
+        <h1>Examen para programadores front-end</h1>
+        <p>Este examen esta básado en las prácticas del día a día de un desarrollador front-end</p>
+    </div>
+    <script>
+        const modeDark = document.getElementById("modeDark");
+        const body = document.body;
+        modeDark.addEventListener('click', () => {
+            if(modeDark.checked)
+                body.classList.add('dark')
+            else
+                body.classList.remove('dark')
+        })
+    </script>
+</body>
+</html>
